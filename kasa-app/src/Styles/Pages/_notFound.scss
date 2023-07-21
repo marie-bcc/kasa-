@@ -1,0 +1,29 @@
+.notFoundContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: $main-color;
+
+    .notFoundTitle{
+        font-size: 288px;
+        margin: 0;
+        font-weight: 700;
+    }
+
+    .notFoundDescription{
+        font-size: 36px;
+    }
+
+    .notFoundLink{
+        color: $main-color;
+        font-size: 18px;
+    
+    }
+}
+
+
+
+

@@ -1,0 +1,25 @@
+.logementContainer {
+    width: 80%;
+    margin: auto;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+} 
+
+.logementCard {
+        width: 340px;
+        height: 340px;
+        flex-basis: calc(33.33% - 30px);
+        margin-bottom: 20px;
+
+        .logementImage{
+            width: 100%;
+        }
+
+        .logementTitle{
+            font-size: 18px;
+        }
+    }

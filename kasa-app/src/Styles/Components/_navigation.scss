@@ -1,0 +1,23 @@
+.navBar{
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px;
+
+    .link{
+        color: $main-color;
+        margin-left: 50px;
+        text-decoration: none;
+        padding-bottom: 5px;
+       
+        &:hover{
+            border-bottom: 2px solid $main-color
+        }
+    }
+
+    .activeLink{
+        border-bottom: 2px solid $main-color
+    }
+
+}
