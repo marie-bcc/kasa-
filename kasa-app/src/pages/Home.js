@@ -1,9 +1,17 @@
 import React from 'react'
+import Header from '../component/Header'
+
+
 
 export default function Home() {
   return (
     <div>
-        {/* <h1 className='home-title'>KASA</h1> */}
+        
+        <Header></Header>
+        <div className='logementContainer'>
+          
+        </div>
+        
     
     </div>
   )

@@ -1,23 +1,55 @@
-.navBar{
+.navBar {
     height: 68px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10px 50px;
 
-    .link{
+    .link {
         color: $main-color;
         margin-left: 50px;
         text-decoration: none;
         padding-bottom: 5px;
-       
-        &:hover{
+
+        &:hover {
             border-bottom: 2px solid $main-color
         }
     }
 
-    .activeLink{
+    .activeLink {
         border-bottom: 2px solid $main-color
     }
 
+    .logoNav{
+        width: 210px;
+    }
+
+
+
+    @media (max-width: 575px) {
+        .logoNav {
+            width: 145px;
+
+        }
+
+        .link {
+            margin-left: 25px;
+            font-size: 13px;
+        }
+
+    }
+
+    @media (max-width: 400px) {
+        .logoNav {
+            width: 100px;
+        
+    }
+
+    .link{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    }
+
+    
 }

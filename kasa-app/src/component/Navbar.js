@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
 
         <nav className="navBar">
-            <img src={logo} alt="logo"></img>
+            <img src={logo} alt="logo" className="logoNav"></img>
             <div>
                 <NavLink to="/" className={({isActive}) => `${isActive && "activeLink"} link `}
                 >Accueil</NavLink>

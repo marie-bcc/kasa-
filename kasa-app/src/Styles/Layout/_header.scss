@@ -1,0 +1,55 @@
+.headerClasse {
+    position: relative;
+    width: 95%;
+    height: 223px;
+    background: url('../HeaderBg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    
+    @media (min-width: 768px) {
+        margin: 30px auto;
+    
+    }
+    
+}
+
+.headerClasse::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.344); 
+    border-radius: inherit; 
+    z-index: 1; 
+}
+
+.home-title{
+    position: relative; 
+    z-index: 2;
+    color: #FFFFFF ; 
+    font-size: 48px;
+    font-weight: 500;
+    white-space: pre-line;
+
+    @media (max-width: 375px) {
+        font-size: 36px;
+        margin-left: 15px;
+        white-space: pre-line;
+        font-size: 24px;
+    }
+
+    @media (max-width: 752px ) {
+        padding-left: 20px;
+        white-space: pre-line;
+        
+    }
+}

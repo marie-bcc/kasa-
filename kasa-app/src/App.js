@@ -4,29 +4,28 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Apropos from './pages/Apropos';
 import Navbar from './component/Navbar';
+import Footer from './component/Footer'; 
+
 
 
 
 
 function App() {
   return (
-    
     <>
       <BrowserRouter>
-      <Navbar/>
+        <Navbar/>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/*' element={<NotFound/>}/>
+          <Route path='/' element={<Home/>}>
+          </Route>
           <Route path='/apropros' element={<Apropos/>}/>
-          
+          <Route path='/*' element={<NotFound/>}/>
         </Routes>
-        
+        <Footer></Footer>
       </BrowserRouter>
     </>
-
-
-
   );
 }
+
 
 export default App;
