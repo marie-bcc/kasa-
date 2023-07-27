@@ -1,0 +1,83 @@
+.logementDetails{
+
+    color: $main-color;
+    text-align: center;
+    
+
+    .logementCover{
+        width: 90%;
+        height: 415px;
+        text-align: center;
+        
+        
+        
+    }
+
+    .logementInformations{
+        text-align: start;
+        margin-left: 5%;
+    }
+
+
+    .hostInformations{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-right: 30px;
+        
+
+        .hostPicture{
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+    }
+
+    .rating{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 100px;
+        
+    }
+
+    // .description-container {
+    //     display: flex;
+    //     justify-content: space-around; 
+    //   }
+      
+
+    // .dropdown-menu {
+    //     width: 582px;
+    //     background-color: $main-color;
+    //     color: white;
+    //     margin-bottom: 10px;
+    //     cursor: pointer;
+       
+    //   }
+      
+    //   .dropdown-menu h3 {
+    //     padding: 10px;
+    //     background-color: #F6F6F6;
+    //     color: $main-color;
+    //   }
+      
+    //   .dropdown-menu.open h3::after {
+    //     content: "▼";
+    //   }
+      
+    //   .dropdown-menu h3::after {
+    //     content: "►";
+    //     float: right;
+    //   }
+      
+    //   .dropdown-menu ul {
+    //     list-style-type: none;
+    //     padding: 0;
+    //     margin: 0;
+    //   }
+      
+      
+      
+      
+}

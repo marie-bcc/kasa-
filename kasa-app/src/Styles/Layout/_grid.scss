@@ -1,31 +1,39 @@
 .logementContainer {
-    height: 829px;
+    min-height: 829px; // changé en min-height pour permettre au conteneur de s'étendre si nécessaire
     width: 95%;
-    margin: 30px 30px;
+    margin: 30px auto; // centré horizontalement
     background-color: #F6F6F6;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-radius: 10px;
-    
-    @media (min-width: 768px) {
-        margin: 30px auto;
-    }
-    
+    padding: 30px 0px ; 
 
-} 
+    .linkToLogement{
+        text-decoration: none;
+    }
+}
 
 .logementCard {
-        width: 340px;
-        height: 340px;
-        flex-basis: calc(33.33% - 30px);
-        margin-bottom: 20px;
+    flex-basis: calc(33% - 20px); 
+    height: 340px;
+    width: 340px;
+    margin: 10px;
+    background: linear-gradient(180deg, #FFFFFF 0%, $main-color 50%);
+    border-radius: 10px;
+    
 
-        .logementImage{
-            width: 100%;
-        }
-
-        .logementTitle{
-            font-size: 18px;
-        }
+    .logementImage {
+        width: 100%;
+        height: 80%;
+        border-radius: 10px 10px 0 0;
     }
+
+    .logementTitle {
+        font-size: 18px;
+        color: #FFFFFF;
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
