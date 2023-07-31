@@ -7,8 +7,7 @@ function Carousel({ pictures }) {
 
     function goToNextSlide() {
         let index = activeIndex;
-        let slides = pictures;
-        let slidesLength = slides.length - 1;
+        let slidesLength = pictures.length - 1;
 
         if (index === slidesLength) {
             index = -1;
@@ -21,8 +20,7 @@ function Carousel({ pictures }) {
 
     function goToPrevSlide() {
         let index = activeIndex;
-        let slides = pictures;
-        let slidesLength = slides.length;
+        let slidesLength = pictures.length;
 
         if (index < 1) {
             index = slidesLength;

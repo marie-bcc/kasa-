@@ -1,4 +1,3 @@
-
 function Header({ showTitle = true, backgroundImage = '' }) {
     const headerStyle = {
         backgroundImage: `url(${backgroundImage})`,
@@ -14,3 +13,4 @@ function Header({ showTitle = true, backgroundImage = '' }) {
 
 export default Header;
 
+/**/
