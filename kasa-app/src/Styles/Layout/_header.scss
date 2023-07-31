@@ -5,18 +5,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 30px 30px;
+    margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    
-    @media (min-width: 768px) {
-        margin: 30px auto;
-    
-    }
-    
+
 }
 
 .headerClasse::before {
@@ -40,7 +35,6 @@
     white-space: pre-line;
 
     @media (max-width: 375px) {
-        font-size: 36px;
         margin-left: 15px;
         white-space: pre-line;
         font-size: 24px;
@@ -49,6 +43,7 @@
     @media (max-width: 752px ) {
         padding-left: 20px;
         white-space: pre-line;
+        font-size: 36px;
         
     }
 }

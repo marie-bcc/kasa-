@@ -16,13 +16,13 @@
 }
 
 .logementCard {
-    flex-basis: calc(33% - 20px);
+    flex-basis: calc(100% / 3 - 20px);
     height: 340px;
-    width: 340px;
     margin: 10px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+
 
     &::after {
         content: '';
