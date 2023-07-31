@@ -2,6 +2,8 @@
     height: 415px;
     width: 90%;
     margin: auto;
+    position: relative;
+
 
     .carouselImage{
         height: 100%;
@@ -9,4 +11,21 @@
         object-fit: cover;
 
     }
+
+    button{
+        appearance: none;
+        border: none;
+        background: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+    }
+    .carouselButtonNext{
+        right: 0;
+    }
+
+
 }

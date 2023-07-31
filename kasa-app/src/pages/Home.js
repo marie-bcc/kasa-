@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../component/Header'
-import LogementsList from '../component/logements/logementList'
+import LogementsList from '../component/logements/LogementList'
 import headerimg from '../Styles/HeaderBg.png'
 
 

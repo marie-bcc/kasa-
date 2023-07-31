@@ -5,7 +5,7 @@ import NotFound from './pages/NotFound';
 import Apropos from './pages/Apropos';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
-import LogementInformations from './component/logements/logementInformations';
+import LogementInformations from './component/logements/LogementInformations';
 
 function App() {
   return (
