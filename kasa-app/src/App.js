@@ -5,7 +5,7 @@ import NotFound from './pages/NotFound';
 import Apropos from './pages/Apropos';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
-import LogementInformations from './component/logements/LogementInformations';
+import  LogementDetails from './component/logements/LogementInformations';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path="/logement/:id" element={<LogementInformations />} />
+          <Route path="/logement/:id" element={<LogementDetails />} />
           <Route path='/apropos' element={<Apropos />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

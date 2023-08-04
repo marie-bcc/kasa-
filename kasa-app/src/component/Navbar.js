@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import logo from '../Styles/Components/LOGO.svg'
 export default function Navbar() {
     return (
