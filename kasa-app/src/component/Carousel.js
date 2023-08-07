@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import data from '/Users/marie/Desktop/KASA/kasa-/kasa-app/src/annoncesLogements.json';
 import nextImg from '/Users/marie/Desktop/KASA/kasa-/kasa-app/src/Styles/nextImg.png';
 import prevImg from '/Users/marie/Desktop/KASA/kasa-/kasa-app/src/Styles/prevImg.png';
 
-const pictures = data.pictures;
+
 const Carousel = ({ pictures }) => {
     const [index, setIndex] = useState(0);
 

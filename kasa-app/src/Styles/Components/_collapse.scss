@@ -1,0 +1,54 @@
+.containerToggle {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.toggle {
+  flex-basis: 45%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.tittleToggle {
+  display: flex;
+  height: 52px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  background-color: $main-color;
+  color: #FFFFFF;
+  border-radius: 10px;
+
+  
+
+  button{
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+
+    .fa-angle-down,  .fa-angle-up{
+      font-size: 32px;
+    }
+   
+  }
+}
+
+.containerInformations {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 0; 
+  color: $main-color;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+
+.toggle.open .containerInformations {
+  height: 200px; 
+}
+
+

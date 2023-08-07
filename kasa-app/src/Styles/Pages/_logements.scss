@@ -1,19 +1,33 @@
-.logementDetails{
+.logementDetails {
     color: $main-color;
     text-align: center;
 
-    .logementCover{
+    .logementCover {
         width: 90%;
         height: 415px;
         text-align: center;
     }
 
-    .logementInformations{
-        text-align: start;
-        margin-left: 5%;
+    .logementInformations {
+
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logementTitre {
+            text-align: start;
+        }
+
+    
     }
 
-    .informations{
+    .informations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @media (max-width: 800px) {
             width: 100%;
@@ -22,12 +36,13 @@
             justify-content: space-around;
         }
 
-        .hostInformations{
+        .hostInformations {
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
             margin-right: 5%;
-            margin-bottom: 30px;
+            margin-top: 10px;
+            margin-bottom: 20px;
             font-size: 18px;
 
             @media (max-width: 800px) {
@@ -38,7 +53,8 @@
                 font-size: 14px;
 
             }
-            .hostPicture{
+
+            .hostPicture {
                 width: 64px;
                 height: 64px;
                 border-radius: 50%;

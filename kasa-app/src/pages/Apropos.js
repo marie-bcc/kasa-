@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../component/Header'
 import AboutImg from '../Styles/AboutImg.png'
+import Collapse from '../component/Collapse'
 
 
 export default function Apropos() {
@@ -12,8 +13,21 @@ export default function Apropos() {
 
       <Header showTitle={false} backgroundImage={AboutImg} />
 
+      <div className='aboutContainer'>
+        <Collapse  title={"Fiabilité"} content={"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."}></Collapse>
 
 
-    </div>
+        <Collapse  title={"Respect"} content={"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."}></Collapse>
+
+
+        <Collapse title={"Services"} content={"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."}></Collapse>
+
+
+        <Collapse  title={"Sécurité"} content={"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."}></Collapse>
+
+
+      </div>
+
+    </div >
   )
 }
