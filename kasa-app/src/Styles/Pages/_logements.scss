@@ -17,51 +17,64 @@
         align-items: center;
         justify-content: space-between;
 
-        .logementTitre {
-            text-align: start;
-        }
-
-    
-    }
-
-    .informations {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      
+        
 
         @media (max-width: 800px) {
-            width: 100%;
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-around;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
-        .hostInformations {
-            display: flex;
-            align-items: center;
-            flex-direction: row-reverse;
-            margin-right: 5%;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            font-size: 18px;
+        .logementTitre {
+            text-align: start;
 
+        }
+
+        .informations {
+            display: flex;
+            flex-direction: column;
+    
             @media (max-width: 800px) {
-                width: 50%;
+                width: 100%;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+               
+            }
+    
+            .hostInformations {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                margin-right: 5%;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                font-size: 18px;
+    
+                @media (max-width: 800px) {
+                   width: 50%;
+                }
+    
+                @media (max-width: 500px) {
+                    font-size: 14px;
+    
+                }
+    
+                .hostPicture {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    margin-left: 20px;
+                }
             }
 
-            @media (max-width: 500px) {
-                font-size: 14px;
-
-            }
-
-            .hostPicture {
-                width: 64px;
-                height: 64px;
-                border-radius: 50%;
-                margin-left: 20px;
-            }
+           
+    
         }
+
 
     }
+
+    
 
 }

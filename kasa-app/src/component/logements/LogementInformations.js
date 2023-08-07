@@ -28,7 +28,7 @@ function LogementDetails() {
       <Carousel pictures={logement.pictures}></Carousel>
 
       <div className='logementInformations'>
-        <div>
+        <div className='containerTitre'>
 
           <div className='logementTitre' >
             <h1>{logement.title}</h1>
@@ -45,18 +45,23 @@ function LogementDetails() {
           </div>
 
         </div>
-        <div>
 
-          <div className="informations">
-            <div className='hostInformations'>
-              <img className='hostPicture' src={logement.host.picture} alt={logement.host.name} />
-              <p>{logement.host.name}</p>
-            </div>
 
-            <StarRating rating={logement.rating}></StarRating>
+        <div className="informations">
+          <div className='hostInformations'>
+            <img className='hostPicture' src={logement.host.picture} alt={logement.host.name} />
+            <p>{logement.host.name}</p>
           </div>
 
+          
+            <StarRating rating={logement.rating}></StarRating>
+          
+
+
+
         </div>
+
+
       </div>
 
 
