@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import nextImg from '/Users/marie/Desktop/KASA/kasa-/kasa-app/src/Styles/nextImg.png';
-import prevImg from '/Users/marie/Desktop/KASA/kasa-/kasa-app/src/Styles/prevImg.png';
+import nextImg from '../Styles/nextImg.png';
+import prevImg from '../Styles/prevImg.png';
 
 
 const Carousel = ({ pictures }) => {

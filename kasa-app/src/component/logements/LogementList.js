@@ -1,5 +1,5 @@
 import LogementCard from './LogementCard';
-import data from '/Users/marie/Desktop/KASA/kasa-/kasa-app/src/annoncesLogements.json';
+import data from '../../annoncesLogements.json'
 
 function LogementsList() {
     return(

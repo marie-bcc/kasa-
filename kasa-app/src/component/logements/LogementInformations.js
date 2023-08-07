@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import data from '/Users/marie/Desktop/KASA/kasa-/kasa-app/src/annoncesLogements.json';
+import data from "../../annoncesLogements.json";
 import NotFound from '../../pages/NotFound';
 import Carousel from '../Carousel';
 import StarRating from "./StarsRating";
