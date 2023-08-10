@@ -52,23 +52,11 @@ function LogementDetails() {
             <img className='hostPicture' src={logement.host.picture} alt={logement.host.name} />
             <p>{logement.host.name}</p>
           </div>
-
-          
-            <StarRating rating={logement.rating}></StarRating>
-          
-
-
+          <StarRating rating={logement.rating}></StarRating>
 
         </div>
 
-
       </div>
-
-
-
-
-
-
 
       <div className='containerToggle'>
         <Collapse title={"Description"} content={logement.description} />

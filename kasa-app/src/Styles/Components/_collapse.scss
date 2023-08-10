@@ -51,8 +51,26 @@
   overflow: hidden;
   transition: height 0.3s ease-in-out;
   font-size: 18px;
+
+  ul{
+    list-style-type: none;
+    text-align: start;
+    padding-left: 15px;
+
+    li{
+      margin-bottom: 8px;
+      font-size: medium;
+      
+    }
+  }
 }
 
+.containerInformations p {
+  text-align: start;
+  margin: 15px;
+  font-size: medium;
+  text-align: justify;
+}
 
 .toggle.open .containerInformations {
   height: 200px; 

@@ -55,16 +55,16 @@
                    width: 50%;
                 }
     
-                @media (max-width: 500px) {
-                    font-size: 14px;
-    
-                }
-    
                 .hostPicture {
-                    width: 64px;
+                    
                     height: 64px;
                     border-radius: 50%;
                     margin-left: 20px;
+
+                    @media (max-width: 800px) {
+                        height: 32px;
+                    
+                      }
                 }
             }
 
