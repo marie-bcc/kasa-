@@ -44,5 +44,18 @@
         right: 0;
     }
 
+    
+    .positionIndicator {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:none; 
+        padding: 5px 10px;
+        border-radius: 15px;
+        color: white;
+        font-weight: 500;
+    }
+    
 
 }

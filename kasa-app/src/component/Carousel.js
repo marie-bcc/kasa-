@@ -10,6 +10,7 @@ const Carousel = ({ pictures }) => {
         const newIndex = index + 1;
         setIndex(newIndex >= pictures.length ? 0 : newIndex);
     }
+
     const prevImage = () => {
         const newIndex = index - 1;
         setIndex(newIndex < 0 ? pictures.length - 1 : newIndex);
@@ -20,9 +21,16 @@ const Carousel = ({ pictures }) => {
             <button className="carouselButtonPrev" onClick={prevImage}> <img src={prevImg}/> </button>
             <img className="carouselImage" src={pictures[index]}></img>
             <button className="carouselButtonNext" onClick={nextImage}><img src={nextImg}/></button>
+
+           
+            <div className="positionIndicator">
+                {`${index + 1}/${pictures.length}`}
+            </div>
         </div>
     )
 }
+
+
 
 export default Carousel;
 
