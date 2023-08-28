@@ -18,6 +18,7 @@
 }
 
 .tittleToggle {
+  position: relative;
   display: flex;
   height: 52px;
   justify-content: space-between;
@@ -26,6 +27,7 @@
   background-color: $main-color;
   color: #FFFFFF;
   border-radius: 10px;
+  z-index: 2;
 
 
   
@@ -51,6 +53,10 @@
   overflow: hidden;
   transition: height 0.3s ease-in-out;
   font-size: 18px;
+  transform: translateY(-8px);
+  z-index: 1;
+  border-radius: 10px;
+  
 
   ul{
     list-style-type: none;
@@ -70,6 +76,7 @@
   margin: 15px;
   font-size: medium;
   text-align: justify;
+  
 }
 
 .toggle.open .containerInformations {

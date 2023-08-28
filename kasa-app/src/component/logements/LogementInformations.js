@@ -5,26 +5,17 @@ import Carousel from '../Carousel';
 import StarRating from "./StarsRating";
 import Collapse from '../Collapse';
 
-
-
 function LogementDetails() {
   const { id } = useParams();
   const logement = data.find(log => log.id === id);
-
-
-
   if (!logement) {
     return (
       <NotFound></NotFound>
     )
   }
-
   const { tags } = logement;
-
   return (
     <div className='logementDetails'>
-
-
       <Carousel pictures={logement.pictures}></Carousel>
 
       <div className='logementInformations'>
@@ -34,8 +25,6 @@ function LogementDetails() {
             <h1>{logement.title}</h1>
             <p>{logement.location}</p>
           </div>
-
-
           <div className='containerTags'>
             {tags.map((tag, index) => (
               <span key={index} className='tags'>
@@ -45,15 +34,12 @@ function LogementDetails() {
           </div>
 
         </div>
-
-
         <div className="informations">
           <div className='hostInformations'>
             <img className='hostPicture' src={logement.host.picture} alt={logement.host.name} />
             <p>{logement.host.name}</p>
           </div>
           <StarRating rating={logement.rating}></StarRating>
-
         </div>
 
       </div>
