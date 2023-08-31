@@ -1,15 +1,16 @@
 import LogementCard from './LogementCard';
-import data from '../../annoncesLogements.json'
+import data from '../../annoncesLogements.json';
 
 function LogementsList() {
-    return(
+    return (
         <div className="logementContainer">
-            {data.slice(0, 6).map((logement, index) => (
+            {data.map((logement, index) => (
                 <LogementCard key={index} logement={logement} />
             ))}
         </div>
-    )   
+    );
 }
 
-export default LogementsList
+export default LogementsList;
+
 

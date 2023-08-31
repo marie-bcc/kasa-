@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import nextImg from '../Styles/nextImg.png';
 import prevImg from '../Styles/prevImg.png';
 
-
 const Carousel = ({ pictures }) => {
     const [index, setIndex] = useState(0);
 
@@ -16,13 +15,21 @@ const Carousel = ({ pictures }) => {
         setIndex(newIndex < 0 ? pictures.length - 1 : newIndex);
     }
 
+    const hasMultipleImages = pictures.length > 1;
+
     return (
         <div className="carousel">
-            <button className="carouselButtonPrev" onClick={prevImage}> <img src={prevImg}/> </button>
-            <img className="carouselImage" src={pictures[index]}></img>
-            <button className="carouselButtonNext" onClick={nextImage}><img src={nextImg}/></button>
-
-           
+            {hasMultipleImages && (
+                <button className="carouselButtonPrev" onClick={prevImage}>
+                    <img src={prevImg}/>
+                </button>
+            )}
+            <img className="carouselImage" src={pictures[index]} alt="carousel" />
+            {hasMultipleImages && (
+                <button className="carouselButtonNext" onClick={nextImage}>
+                    <img src={nextImg}/>
+                </button>
+            )}
             <div className="positionIndicator">
                 {`${index + 1}/${pictures.length}`}
             </div>
@@ -30,7 +37,6 @@ const Carousel = ({ pictures }) => {
     )
 }
 
-
-
 export default Carousel;
+
 
